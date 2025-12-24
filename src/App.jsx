@@ -1,7 +1,19 @@
-import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return <Home />;
+  return (
+    <>
+    <Header />  
+    <main  style={{padding: "1rem"}}>
+      <AppRoutes />
+    </main>
+    <Footer />
+    </>
+
+  );
+
 }
 
 export default App;
